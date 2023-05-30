@@ -1,13 +1,17 @@
 window.addEventListener('DOMContentLoaded', function() {
-    var welcomeSection = document.getElementById('welcome-section');
-  
+  var welcomeSection = document.getElementById('welcome-section');
+
+  setTimeout(function() {
+    welcomeSection.classList.add('fade-out');
+
     setTimeout(function() {
-      welcomeSection.classList.add('fade-out');
-      setTimeout(function() {
-        welcomeSection.parentNode.removeChild(welcomeSection);
-      }, 1000); // Remove the welcome section after fade-out animation duration
+      welcomeSection.style.display = 'none';
     }, 1000);
+  }, 2000);
 });
+
+
+
 
 window.addEventListener('DOMContentLoaded', function() {
   var welcomeSound = new Audio('../sound/welcome.mp3');
@@ -29,7 +33,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
   setTimeout(function() {
     navElement.style.display = '';
-  }, 2000);
+  }, 2500);
 });
 
 

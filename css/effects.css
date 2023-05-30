@@ -1,46 +1,25 @@
-
 #welcome-section {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeInAnimation 1s ease-in forwards;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
 }
-  
-.welcome-text {
-    text-align: center;
-}
-  
-.welcome-text h1 {
-    font-size: 32px;
-    color: black;
-}
-  
-@keyframes fadeInAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-}
-  
+
 .fade-out {
-    animation: fadeOutAnimation 1s ease-in forwards;
+  animation: fadeOutAnimation 1s ease-in forwards;
 }
-  
+
 @keyframes fadeOutAnimation {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-  
