@@ -204,6 +204,19 @@ body {
         margin-left: 80px;
         margin-bottom: 100px;
     }
+
+    .banner-email {
+        margin-top: 12px !important;
+        height: 100%;
+        margin-left: 50px;
+    }
+    
+    .banner-phone {
+        margin-top: 12px !important;
+        height: 100;
+        margin-right: 50px; 
+        font-weight: bold;
+    }
 }
 
 
@@ -304,6 +317,15 @@ body {
         border-radius: 30px;
         margin-bottom: 80px;
         border: 0;
+    }
+
+    .banner-email {
+        margin-left: 20px;
+    }
+    
+    .banner-phone {
+        margin-right: 20px; 
+        font-weight: bold;
     }
 
 }
