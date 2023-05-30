@@ -123,6 +123,18 @@ body {
     margin-bottom: 10px;
 }
 
+.contactus-btn:hover {
+    background-color: #016e3a;
+}
+
+.chat-btn:hover {
+    background-color: #076188;
+}
+
+.phone-btn:hover {
+    background-color:#ff6b10 ;
+}
+
 /* Testimonials */
 .testimonials {
     padding: 0;
