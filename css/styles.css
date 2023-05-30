@@ -194,10 +194,12 @@ body {
 }
 
 
+
+
 @media only screen and (max-width: 431px) {
 
     #tagline {
-        font-size: 50px !important;
+        font-size: 80px !important;
         margin: 0;
         margin-left: 80px;
         margin-bottom: 100px;
@@ -306,5 +308,33 @@ body {
 
 }
 
+@media only screen and (max-width: 385px) {
+
+    #tagline {
+        font-size: 60px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    #tagline {
+        font-size: 50px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
 
 
+@media only screen and (max-width: 280px) {
+
+    #tagline {
+        font-size: 45px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
