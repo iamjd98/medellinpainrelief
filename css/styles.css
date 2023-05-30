@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+ /* Hero Section */
+
+ /* Banner */
+
+.hero-section {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.banner {
+    height:5%;
+    width: 100%;
+    background-color: #DCDEDB;
+}
+
+.banner-email {
+    margin-top: 5px;
+    height: 100%;
+    margin-left: 50px;
+}
+
+.banner-phone {
+    margin-top: 5px;
+    height: 100;
+    margin-right: 50px; 
+    font-weight: bold;
+}
+
+
+  /* Nav Bar */
+.nav-section {
+   width: 100%;
+}
+
+.nav-logo {
+   width: 40%;
+   margin-left: 35px;
+}
+
+.navbar-brand {
+   width: 30%;
+}
+
+
+/* Banner Photo */
+
+.banner-photo-con {
+    background: linear-gradient(rgba(255, 255, 255, 0.726), rgba(255, 255, 255, 0.753)), url(../photos/banner_bg.jpeg);
+    background-position: center center;
+    background-size: cover;
+    width: 100;
+    height: 100vh;
+}
+
+.tagline-con {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tagline-con h1 {
+    font-size: 130px;
+    margin-left: 80px;
+    margin-bottom: 120px;
+}
+
+
+
+.pain {
+    color: #FF0000;
+}
+
+.buttons-con {
+    height: 100%;
+}
+
+.buttons {
+    margin-bottom: 95px;
+}
+
+.contactus-btn {
+    background-color: #00BF63;
+    font-size: 30px;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-btn {
+    background-color:#3390B8;
+    font-size: 20px;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.phone-btn {
+    background-color:#FF914D;
+    font-size: 30px;
+    width: 80%;
+    height: 60px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+
+ /* Media Query */
+
+ @media only screen and (max-width: 575px) {
+
+    .tagline-con {
+        height: 30%;
+        display: flex;
+        align-items: start;
+    }   
+
+    #tagline {
+        font-size: 60px !important;
+        margin-right: 80px !important;
+        margin-top: 30px !important;
+        text-align: center;
+    }
+
+    .buttons-con {
+        margin: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .buttons {
+        margin-bottom: 140px !important;
+    }
+
+    .buttons div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contactus-btn {
+        background-color: #00BF63;
+        font-size: 25px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+        padding: 0;
+    }
+
+    .chat-btn {
+        background-color:#3390B8;
+        font-size: 18px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+    }
+
+    .phone-btn {
+        background-color:#FF914D;
+        font-size: 20px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        margin-bottom: 80px;
+        border: 0;
+    }
+}
+
+
+@media only screen and (max-width: 431px) {
+
+    #tagline {
+        font-size: 50px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+
+
+@media only screen and (max-width: 630px) {
+
+    #tagline {
+        font-size: 81px;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 930px) {
+
+    .banner {
+        font-size: 12px;
+    }
+
+    .banner-email {
+        margin-top: 5px;
+        margin-left: 8px;
+    }
+    
+    .banner-phone {
+        margin-top: 5px;
+        margin-right: 8px;
+    }
+
+    .tagline-con h1 {
+        font-size:100px;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+    
+
+    .contactus-btn {
+        background-color: #00BF63;
+        font-size: 25px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+    }
+
+    .chat-btn {
+        background-color:#3390B8;
+        font-size: 18px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+    }
+
+    .phone-btn {
+        background-color:#FF914D;
+        font-size: 20px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        margin-bottom: 80px;
+        border: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+    .buttons {
+        margin: 0;
+    }
+
+    .contactus-btn {
+        background-color: #00BF63;
+        font-size: 25px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+    }
+
+    .chat-btn {
+        background-color:#3390B8;
+        font-size: 18px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        border: 0;
+    }
+
+    .phone-btn {
+        background-color:#FF914D;
+        font-size: 20px;
+        width: 80%;
+        height: 60px;
+        border-radius: 30px;
+        margin-bottom: 80px;
+        border: 0;
+    }
+
+}
+
+
+
