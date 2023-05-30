@@ -30,6 +30,15 @@ body {
     margin-left: 50px;
 }
 
+.banner-email:hover {
+    cursor: pointer;
+}
+
+.nav-logo {
+    width: 40%;
+    margin-left: 35px;
+ }
+
 .banner-phone {
     margin-top: 5px;
     height: 100;
@@ -241,6 +250,11 @@ body {
         margin-left: 80px;
         margin-bottom: 100px;
     }
+
+    .nav-logo {
+        width: 100%;
+        margin-left: 20px;
+     }
 }
 
 
