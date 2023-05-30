@@ -5,6 +5,8 @@
 
 body {
     font-family: 'Exo 2', sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 
@@ -143,14 +145,6 @@ body {
 .phone-btn:hover {
     background-color:#ff6b10 ;
 }
-
-/* Testimonials */
-.testimonials {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-}
-
 
  /* Media Query */
 

@@ -1,0 +1,9 @@
+#testimonial-section {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.testimonial-text {
+    color: #6C0C0F;
+}  
