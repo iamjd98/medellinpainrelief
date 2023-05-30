@@ -1,5 +1,5 @@
 function openMessenger() {
-    window.open("https://www.messenger.com", "_blank");
+    window.open("https://m.me/medellinpainrelief", "_blank");
   }
 
 var phoneButton = document.getElementById('phoneButton');
