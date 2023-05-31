@@ -436,3 +436,11 @@ body {
         margin-bottom: 100px;
     }
 }
+
+@media (max-height: 600px) {
+    #tagline {
+        font-size: 38px !important;
+        margin: 0;
+        margin-left: 80px;
+    }
+}
