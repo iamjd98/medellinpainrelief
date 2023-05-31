@@ -363,6 +363,17 @@ body {
 }
 
 
+@media only screen and (max-width: 414px) {
+
+    #tagline {
+        font-size: 80px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
+
+
 @media only screen and (max-width: 390px) {
 
     #tagline {
