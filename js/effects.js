@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 window.addEventListener('DOMContentLoaded', function() {
-  var testimonialSection = document.querySelector('.testimonial-section');
+  var testimonialSection = document.querySelector('.treatment-section');
 
   testimonialSection.style.display = 'none';
 
