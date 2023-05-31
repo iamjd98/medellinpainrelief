@@ -437,10 +437,22 @@ body {
     }
 }
 
+
+
 @media (max-height: 600px) {
     #tagline {
         font-size: 38px !important;
         margin: 0;
         margin-left: 80px;
+    }
+}
+
+@media only screen and (max-width: 288px) {
+
+    #tagline {
+        font-size:34px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
     }
 }
