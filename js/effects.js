@@ -36,5 +36,15 @@ window.addEventListener('DOMContentLoaded', function() {
   }, 2500);
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+  var testimonialSection = document.querySelector('.testimonial-section');
+
+  testimonialSection.style.display = 'none';
+
+  setTimeout(function() {
+    testimonialSection.style.display = '';
+  }, 2500);
+});
+
 
   
