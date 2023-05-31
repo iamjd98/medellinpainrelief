@@ -456,3 +456,13 @@ body {
         margin-bottom: 100px;
     }
 }
+
+@media only screen and (max-width: 246px) {
+
+    #tagline {
+        font-size:34px !important;
+        margin: 0;
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+}
