@@ -46,5 +46,27 @@ window.addEventListener('DOMContentLoaded', function() {
   }, 2500);
 });
 
+function scrollToTreatmentSection(event) {
+  event.preventDefault();
+  
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+  const sectionTop = section.offsetTop;
+  
+  window.scrollTo({
+    top: sectionTop,
+    behavior: 'smooth'
+  });
+}
 
+function scrollToHeroSection(event) {
+  event.preventDefault();
+
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
   

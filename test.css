@@ -216,25 +216,6 @@ overflow-y: hidden;
 }
 
 
-@media only screen and (max-width: 833px) {
-
-    .tagline-text-con {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
-
-    .tagline-con .tagline-text-con p {
-        font-size: 90px;
-        margin-left: 50px !important;
-        margin-bottom: 100px !important;
-    }
-
-}
-
-
 @media only screen and (max-width: 768px) {
 
     .tagline-text-con {
@@ -249,18 +230,6 @@ overflow-y: hidden;
         font-size: 80px;
         margin-left: 50px !important;
         margin-bottom: 95px !important;
-    }
-
-    .phone-btn {
-        background-color:#FF914D;
-        font-size: 25px;
-        width: 80%;
-        height: 60px;
-        border-radius: 30px;
-        margin-bottom: 80px;
-        border: 0;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
 
@@ -352,6 +321,11 @@ overflow-y: hidden;
         justify-content: center;
         
     }
+
+
+
+
+
 }
 
 
