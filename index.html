@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property=’og:title’ content='MEDELLIN PAIN RELIEF CHIROPRACTIC'/>
-    <meta property=’og:image’ content='https://i.ibb.co/ZVwCfC3/thumbnail.jpg'/>
-    <meta property=’og:description’ content='Medellin Pain Relief is a Chiropratic Clinic located Medellin, Cebu, Philippines (Northern Cebu).'/>
-    <meta property=’og:url’ content='medellin-painrelief.com'/>
+    <meta property="og:title" content="MEDELLIN PAIN RELIEF CHIROPRACTIC">
+    <meta property="og:image" content="https://i.ibb.co/ZVwCfC3/thumbnail.jpg">
+    <meta property="og:description" content="Medellin Pain Relief is a Chiropractic Clinic located in Medellin, Cebu, Philippines (Northern Cebu).">
+    <meta property="og:url" content="https://www.medellin-painrelief.com">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Medellin Pain Relief is a Chiropractic Clinic located in Medellin, Cebu, Philippines (Northern Cebu).">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="chiropractic, chiropractic services, neck pain, back pain, shoulder pain, arthritis, GERD, leg pain, numbness and tingling, sciatica, accident injury, Medellin, Cebu, Philippines, Northern Cebu, arm pain, hip pain">
+    <link rel="canonical" href="https://www.medellin-painrelief.com/">
     <link rel="icon" type="image/x-icon" href="/photos/favicon.ico">
     <link rel="stylesheet" href="./css/effects.css">
     <link rel="stylesheet" href="./css/hero-section.css">
@@ -111,8 +116,6 @@
 </div>
 
 <!-- Treatment Section -->
-
-
 <div id="treatment-section" class="treatment-section">
 
     <div class="container-fluid mx-auto">
@@ -126,12 +129,23 @@
 
         <div class="main-video shadow">
             <div class="video">
-                <video src="./treatments/Justine.mp4" controls autoplay></video>
+              <div class="container">
+                <div class="video-wrapper">
+                  <video id="myVideo" src="./treatments/Justine.mp4" controls autoplay></video>
+                  <div id="playButton">
+                    <button onclick="toggleVideo()" id="playIcon">&#9658;</button>
+                    <div id="playText">Click to Play</div>
+                  </div>
+                </div>
+              </div>
                 <h3 class="title">Treatment with Justine</h3>
             </div>
         </div>
 
         <div class="video-list shadow">
+
+          <center><h4 class="m-1">Playlist </h4></center>
+
           <div class="vid active shadow">
               <video src="./treatments/Justine.mp4"></video>
               <h3 class="title">Treatment with Justine</h3>
@@ -174,6 +188,8 @@
     </div>
 
 </div>
+
+<!-- Testimonial Section -->
 
 
 <a href="#" class="back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></a>

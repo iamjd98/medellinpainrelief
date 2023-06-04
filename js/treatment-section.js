@@ -15,3 +15,29 @@ listVideo.forEach(video =>{
         };
     };
 });
+
+var video = document.getElementById("myVideo");
+var playButton = document.getElementById("playButton");
+var playIcon = document.getElementById("playIcon");
+
+function toggleVideo() {
+  if (video.paused) {
+    video.play();
+    playIcon.style.display = "none";
+    playText.style.display = "none";
+  } else {
+    video.pause();
+    playIcon.style.display = "block";
+    playText.style.display = "block";
+  }
+}
+
+video.addEventListener("play", function() {
+  playIcon.style.display = "none";
+  playText.style.display = "none";
+});
+
+video.addEventListener("pause", function() {
+  playIcon.style.display = "block";
+  playText.style.display = "block";
+});

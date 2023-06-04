@@ -129,3 +129,50 @@
 
 
 
+.container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  #myVideo {
+    display: block;
+    width: 100%;
+  }
+  
+  #playButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #playIcon {
+    color: #ffffff;
+    background: rgba(0, 191, 99, 0);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #playText {
+    color: #6C0C0F;
+    font-weight:bold;
+    font-size: 16px;
+    text-align: center;
+  }
+
