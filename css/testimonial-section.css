@@ -1,178 +1,126 @@
-#treatment-section {
+#testimonial-section {
     height: 100vh;
     overflow: hidden;
     font-family: 'Exo 2', sans-serif;
 }
 
-.treatment-text {
-    color: #6C0C0F;
+.testimonial-video-con {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
-.video-con {
-    max-height: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 15px;
-    align-items: flex-start;
-    padding: 5px 5%;
+.video-wrapper {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 }
 
-.video-con .main-video {
-    background: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-.video-con .main-video video {
-    width: 100%;
-    border-radius: 5px;
-}
-
-.video-con .main-video .title {
-    color: #333;
-    font-size: 23px;
-    padding-top: 15px;
-    padding-bottom:15px;
-}
-
-.video-con .video-list {
-    background: #fff;
-    border-radius: 5px;
-    max-height: 82vh;
-    overflow-y: scroll;
-}
-
-.video-con .video-list::-webkit-scrollbar{
-    width: 7px;
-}
-
-.video-con .video-list::-webkit-scrollbar-track{
-    background: #ccc;
-    border-radius: 50px;
-}
-
-.video-con .video-list::-webkit-scrollbar-thumb{
-    background: #666;
-}
-
-.video-con .video-list .vid video{
-    width: 100px;
-    border-radius: 5px;
-}
-
-.video-con .video-list .vid {
-    display: flex;
-    align-items:center;
-    gap: 15px;
-    background: #f7f7f7;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid rgba(0,0,0,.1);
-    cursor: pointer;
-}
-
-.video-con .video-list .vid:hover {
-    background: #eee;
-}
-
-.video-con .video-list .vid.active {
-    background: #2980b9;
-}
-
-.video-con .video-list .vid.active .title {
-    color: white;
-}
-
-.video-con .video-list .vid .title {
-    color:#333;
-    font-size: 17px;
-}
-
-@media (max-width:991px){
-
-    .video-con {
-        grid-template-columns: 1.5fr 1fr;
-        padding: 10px;
-    }
-
-    .video-con .video-list {
-        background: #fff;
-        border-radius: 5px;
-        max-height: 80vh;
-        overflow-y: scroll;
-    }
-
+.testimonial-video {
+  width: 100%;
 }
 
 
-@media (max-width:768px){
-
-    .video-con {
-        grid-template-columns: 1fr;
-    }
-
-    .video-con .main-video video {
-        width: 100%;
-        height: 200px;
-        border-radius: 5px;
-    }
-
-    .video-con .video-list {
-        background: #fff;
-        border-radius: 5px;
-        max-height: 55vh;
-        overflow-y: scroll;
-    }
-
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
 }
 
+.play-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid lightgreen;
+}
 
-
-.container {
-    position: relative;
-    display: inline-block;
+@media (max-width: 991px) {
+  .testimonial-video {
+    height: 160px;
+    width: fit-content;
   }
-  
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-  }
-  
-  #myVideo {
-    display: block;
-    width: 100%;
-  }
-  
-  #playButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #playIcon {
-    color: #ffffff;
-    background: rgba(0, 191, 99, 0);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    font-size: 50px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  #playText {
-    color: #6C0C0F;
-    font-weight:bold;
-    font-size: 16px;
-    text-align: center;
+}
+
+@media (max-width: 767px) {
+
+  #testimonial-section {
+    height: fit-content;
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
   }
 
+  .play-button {
+    width: 60px;
+    height: 60px;
+    margin-top: -45px;
+    pointer-events: auto;
+    z-index: 10;
+  }
+
+  .play-button::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 25px solid lightgreen;
+  }
+}
+
+@media (max-width: 576px) {
+  .play-button {
+    width: 50px;
+    height: 50px;
+    margin-top: -35px;
+  }
+
+  .play-button::before {
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 20px solid lightgreen;
+  }
+}
+
+
+.video-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  pointer-events: none; 
+}
+
+.testimonial-video-carousel {
+  width: 100%;
+  max-height: 40vh;
+}
+
+.testimonial-video {
+  max-height: 40vh;
+}
+
+.carousel {
+  max-height: 40vh;
+}
+
+.patient-name {
+  color: #6C0C0F;
+  font-weight: bold;
+}
+
+.patient-symptoms {
+  color: aliceblue;
+  font-weight: bold;
+}
