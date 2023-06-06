@@ -1,6 +1,5 @@
 #testimonial-section {
-    height: fit-content
-    ;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Exo 2', sans-serif;
 }
