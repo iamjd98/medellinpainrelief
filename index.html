@@ -23,6 +23,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>Welcome to Medellin Pain Relief</title>
 </head>
 <body>
@@ -117,14 +119,14 @@
 <!-- Treatment Section -->
 <div id="treatment-section" class="treatment-section row m-0 p-0 shadow">
 
-    <div class="container-fluid mx-auto">
+    <div id="treatment-text" class="container-fluid mx-auto">
         <center>
           <h1 class="treatment-text fw-bold mt-3">Treatment Videos</h1>
         </center>
     </div>
 
 
-    <div class="video-con">
+    <div id="video-con" class="video-con">
 
         <div class="main-video shadow">
             <div class="video">
@@ -141,7 +143,7 @@
             </div>
         </div>
 
-        <div class="video-list shadow">
+        <div id="video-list" class="video-list shadow">
 
           <center><h4 class="m-1">Playlist </h4></center>
 
@@ -191,13 +193,13 @@
 <!-- Testimonial Section -->
 <div id="testimonial-section" class="m-0 p-0">
 
-    <div class="container-fluid mx-auto">
+    <div id="testimonial-text" class="container-fluid mx-auto">
       <center>
         <h1 class="treatment-text fw-bold mt-3">Testimonials</h1>
       </center>
     </div>
 
-    <div class="testimonial-video-con mt-3">
+    <div id="testimonial-video-con" class="testimonial-video-con mt-3">
       <div class="testimonial-video-wrapper row m-0 p-0">
 
         <div class="video-wrapper col-lg-3 col-md-6 col-sm-12">
@@ -239,9 +241,160 @@
       </div>
     </div>
     
-    <div class="testimonial-text-con">
+    <div id="testimonial-text-con" class="testimonial-text-con m-0 p-0">
+      
+      <div class="ccontainer ">
+        <div class="testimonials-content">
+          <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class="swiper-wrapper">
 
-    </div>
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Aira.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Aira</h3>
+                    <span class="symptoms">Neck and Lower Back Pain</span>
+                  </div>
+                </div>
+                <p>
+                  "I have a neck and lower back pain for quite some time. Then I met Doctor Rick, he adjusted my back and my neck. 
+                  Now I feel so much better, I will be coming back again soon for another treatment. 
+                  If you guys are feeling the same, I recommend to come here in Medellin Pain Relief."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Ike.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Ike</h3>
+                    <span class="symptoms">Asthma</span>
+                  </div>
+                </div>
+                <p>
+                  "Before my session with Dr. Rick, It feels heavy to breathe due to tightness 
+                  in my chest. However, after his treatment, 
+                  I experienced significant improvement. I now feel much better, 
+                  lighter, and my breathing has become deeper. I am sincerely grateful to Dr. Rick for his help. 
+                  Thank you Doctor Rick!"
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Jose Blair.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Jose Blair</h3>
+                    <span class="symptoms">Shoulder Pain</span>
+                  </div>
+                </div>
+                <p>
+                  "I had a pinched nerve in my left shoulder, making it difficult to lift my hand.
+                  Thankfully, after multiple sessions with Dr. Rick, I have experienced significant 
+                  improvement. I can now raise my hand without, and the pinched 
+                  nerve has completely disappeared. I highly recommend visiting 
+                  Dr. Rick if you are facing similar problems"
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Odel.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Odel</h3>
+                    <span class="symptoms">Knee Pain</span>
+                  </div>
+                </div>
+                <p>
+                  "I visited Medellin Pain Relief and their service is really nice. 
+                  The pains I had been experiencing, such as my knee sprain, completely disappeared. 
+                  Their treatment is unique, it's an international kind of treatment. 
+                  You will really feel amazing after the treatment. 
+                  I extend my sincere gratitude to Dr. Rick for his expertise and care."
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Ernest.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Ernest</h3>
+                    <span class="symptoms">Ankle Pain</span>
+                  </div>
+                </div>
+                <p>
+                  "I sought treatment from Dr. Rick in Medellin to address various pains and 
+                  tensions in my body, including an issue with my ankle. After just one session, 
+                  I feel really great and all the tensions on my body is now gone. 
+                  I wholeheartedly recommend seeking treatment from Dr. Rick for anyone in need"
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+
+              <div class="swiper-slide testimonial-items">
+                <div class="info">
+                  <img src="./testimonials/Marites.png" alt="Medellin Pain Relief Testimonials">
+                  <div class="text-box">
+                    <h3 class="name">Marites</h3>
+                    <span class="symptoms">Back Pain</span>
+                  </div>
+                </div>
+                <p>
+                  "This is my first time comin here in Medellin Pain Relief, I had an MRI before and 
+                  it showed Lumbar Spondylosis. Despite previous unsuccessful rehab attempts,
+                  Dr. Rick's treatment has made a significant difference and I now feel a lot better. 
+                  Grateful for Doc Rick's expertise and care. Thank you so much Doc!"
+                </p>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="swiper-pagination js-testimonials-pagination"></div>
+          </div>
+        </div>
+
+      </div>
 
 </div>
 
@@ -254,5 +407,25 @@
 <script src="./js/testimonial-section.js"></script>
 <script src="./js/effects.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+ const swiper = new Swiper('.js-testimonials-slider', {
+  grabCursor: true,
+  spaceBetween: 30,
+  pagination: {
+    el: '.js-testimonials-pagination',
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+    },
+  },
+});
+</script>
 </body>
 </html>

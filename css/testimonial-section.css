@@ -1,5 +1,6 @@
 #testimonial-section {
-    height: 100vh;
+    height: fit-content
+    ;
     overflow: hidden;
     font-family: 'Exo 2', sans-serif;
 }
@@ -30,7 +31,7 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,8 +45,9 @@
   height: 0;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
-  border-left: 40px solid lightgreen;
+  border-left:   40px solid #00bf63b4;
 }
+
 
 @media (max-width: 991px) {
   .testimonial-video {
@@ -58,7 +60,6 @@
 
   #testimonial-section {
     height: fit-content;
-    overflow: hidden;
     font-family: 'Exo 2', sans-serif;
   }
 
@@ -123,4 +124,87 @@
 .patient-symptoms {
   color: aliceblue;
   font-weight: bold;
+}
+
+
+
+.testimonial-text-con {
+  max-height: fit-content;
+}
+
+.ccontainer {
+  max-width: 90%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2;
+}
+
+.testimonial-text-con {
+  padding: 100px 0;
+}
+
+.testimonial-items {
+  background-color: rgba(219, 219, 219, 0.562);
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.testimonial-items .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-items img {
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.testimonial-items .name {
+  font-size: 24px;
+  color:#6C0C0F;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.testimonial-items .job {
+  text-transform: capitalize;
+  color: rgb(97, 97, 97);
+}
+
+.testimonial-items p {
+  font-size: 12px;
+  margin-top: 20px;
+  color:rgb(97, 97, 97);;
+}
+
+.testimonial-items .rating {
+  margin-top: 15px;
+  font-size: 14px;
+  color: hsl(36,88%,66%);
+}
+
+.testimonial-text-con .swiper-pagination {
+  position: relative;
+  margin-top: 40px;
+  bottom: auto;
+}
+
+.testimonial-text-con .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: rgb(133, 126, 126);
 }
