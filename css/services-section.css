@@ -35,11 +35,6 @@
     margin-left: 8px;
 }
 
-.hidden {
-    opacity: 0;
-}
-
-
 @media only screen and (max-width: 768px) {
     .services-text-wrap {
         width: 60%;
