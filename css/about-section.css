@@ -1,0 +1,113 @@
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Exo 2', sans-serif;
+    height: 100vh;
+}
+
+.about-section-title {
+  color:#6C0C0F;
+}
+
+.modal-title {
+  color:#6C0C0F;
+  font-weight: bold;
+}
+
+.about-content {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 100px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-photo {
+  width: 60vh;
+  border-radius: 20px;
+}
+
+.readmore-btn {
+  background-color: #FF914D;
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+  padding: 3px;
+}
+
+.clinichrs-con {
+  width: 100%;
+  width: 0;
+  padding: 0;
+}
+
+.clinichrs-title {
+  color: #00BF63;
+  width: 100%;
+}
+
+.clinichrs-title h4 {
+  font-weight: bold;
+}
+
+.schedules-con {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 767px) {
+
+  .about-section {
+    height: fit-content;
+}
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+}
+
+  .about-content {
+  font-size: 13px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.about-content-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.readmore-btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+  .aboutus-photo {
+    width: 40vh;
+    border-radius: 20px;
+  }
+
+  .text-container {
+    display: flex;
+    justify-content: center;
+}
+
+  .about-content {
+  font-size: 11px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}
+  
