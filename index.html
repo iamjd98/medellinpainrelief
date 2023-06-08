@@ -632,17 +632,17 @@
         <input type="hidden" name="access_key" value="928fd695-dcbe-4c9c-91e4-5930acee473f">
 
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+          <input name="Email" type="email" class="form-control" id="emailInput" placeholder="name@example.com">
           <label for="emailInput">Enter Email</label>
         </div>
       
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="fullNameInput" placeholder="Enter Full Name">
+          <input name="Name" type="text" class="form-control" id="fullNameInput" placeholder="Enter Full Name">
           <label for="fullNameInput">Enter Full Name</label>
         </div>
       
         <div class="form-floating">
-          <textarea class="form-control" placeholder="Enter your message here" id="messageInput" style="height: 100px"></textarea>
+          <textarea name="Message" class="form-control" placeholder="Enter your message here" id="messageInput" style="height: 100px"></textarea>
           <label for="messageInput">Enter Your Message Here</label>
         </div>
         <button type="submit" class="btn btn-md btn-success mt-2" onclick="validateForm(event)" id="submitButton">Submit Message</button>
