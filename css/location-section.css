@@ -1,0 +1,20 @@
+.location-section {
+    font-family: 'Exo 2', sans-serif;
+    height: 100vh;
+}
+
+.location-section-title {
+    color: #6C0C0F;
+}
+
+@media only screen and (max-width: 767px) {
+    .sched-text {
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .clinichrs {
+        margin-top: 20px;
+    }
+}

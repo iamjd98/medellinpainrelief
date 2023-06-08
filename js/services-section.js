@@ -1,33 +1,43 @@
 document.addEventListener("DOMContentLoaded", function() {
-    var serviceSection = document.getElementById("services-section");
-    var checkmarks = serviceSection.querySelectorAll("img[src='./photos/check-mark-7-64.ico']");
-    for (var i = 0; i < checkmarks.length; i++) {
-      checkmarks[i].style.opacity = 0;
-    }
-    
-    var lastVisibleIndex = -1; 
-    
-    function handleScroll() {
-      var scrollPosition = window.scrollY || window.pageYOffset;
-      var sectionTop = serviceSection.offsetTop;
-      var windowHeight = window.innerHeight;
-      
-      if (scrollPosition > sectionTop - windowHeight && scrollPosition < sectionTop) {
-        var offset = scrollPosition - (sectionTop - windowHeight);
-        var opacity = offset / windowHeight;
-        
-        var checkmarkIndex = Math.floor(opacity * checkmarks.length);
-        if (checkmarkIndex > lastVisibleIndex) {
-          for (var i = lastVisibleIndex + 1; i <= checkmarkIndex; i++) {
-            setTimeout(function(index) {
-              checkmarks[index].style.opacity = 1;
-            }, (i - lastVisibleIndex) * 300, i);
-          }
-          lastVisibleIndex = checkmarkIndex;
-        }
+  var serviceSection = document.getElementById("services-section");
+  var checkmarks = serviceSection.querySelectorAll("img[src='./photos/check-mark-7-64.ico']");
+  var lastVisibleIndex = -1;
+
+  function fadeIn(element) {
+    element.style.opacity = 0;
+    var opacity = 0;
+    var increment = 0.01;
+    var interval = 10;
+    var fadeInInterval = setInterval(function() {
+      opacity += increment;
+      element.style.opacity = opacity;
+
+      if (opacity >= 1) {
+        clearInterval(fadeInInterval);
       }
-    }
-    
-    window.addEventListener("scroll", handleScroll);
-  });
-  
+    }, interval);
+  }
+
+  function handleIntersection(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        var visibleCheckmarks = Array.from(checkmarks).slice(lastVisibleIndex + 1);
+        visibleCheckmarks.forEach(function(checkmark, index) {
+          setTimeout(function() {
+            fadeIn(checkmark);
+          }, (index + 1) * 300);
+        });
+        lastVisibleIndex += visibleCheckmarks.length;
+      }
+    });
+  }
+
+  var options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.5
+  };
+
+  var observer = new IntersectionObserver(handleIntersection, options);
+  observer.observe(serviceSection);
+});
