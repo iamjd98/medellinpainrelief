@@ -1,0 +1,34 @@
+#contactus-section {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.contactus-title-con {
+    height: 10vh;
+}
+
+.contactus-section-title {
+    color: #6C0C0F;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form-con {
+    width: fit-content;
+    background: rgba(219, 219, 219, 0.247);
+    border-radius: 20px;
+    position: relative;  
+}
+
+.footer-con {
+    width: 100%;
+    height:10vh;
+    background:  rgb(219, 219, 219);;
+}
