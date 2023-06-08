@@ -34,3 +34,4 @@ function validateForm(event) {
 
     submitButton.disabled = email.trim() === '' || fullName.trim() === '' || message.trim() === '';
   });
+
