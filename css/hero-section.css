@@ -52,9 +52,8 @@ overflow-y: hidden;
         height: 100%;
     }
 
-
     .tagline-con .tagline-text-con p {
-        font-size: 120px;
+        font-size: 110px;
         margin-left: 50px !important;
     }
 
@@ -189,7 +188,7 @@ overflow-y: hidden;
 
 
     .tagline-con .tagline-text-con p {
-        font-size: 120px;
+        font-size: 95px;
         margin-left: 50px !important;
         margin-bottom: 110px !important;
     }

@@ -70,7 +70,38 @@ function scrollToHeroSection(event) {
   }
 }
   
+function scrollToTestimonialSection(event) {
+  event.preventDefault();
 
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function scrollToServicesSection(event) {
+  event.preventDefault();
+
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function scrollToAboutSection(event) {
+  event.preventDefault();
+
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 window.addEventListener('scroll', function() {
   var backToTopButton = document.querySelector('.back-to-top');
