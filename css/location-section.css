@@ -27,9 +27,10 @@
         margin-bottom: 20px;
     }
 
-    .sched-con {
+    #sched-con {
+        margin-top: 20px !important;
         display: flex;
-        align-items: start;
+        align-items: center;
     }
 
     .sched-text {

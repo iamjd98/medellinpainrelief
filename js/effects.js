@@ -103,6 +103,17 @@ function scrollToAboutSection(event) {
   }
 }
 
+function scrollToLocationSection(event) {
+  event.preventDefault();
+
+  const sectionId = event.target.getAttribute('href');
+  const section = document.querySelector(sectionId);
+
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 window.addEventListener('scroll', function() {
   var backToTopButton = document.querySelector('.back-to-top');
   if (window.pageYOffset > 300) {
