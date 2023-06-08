@@ -7,7 +7,31 @@
     color: #6C0C0F;
 }
 
+.map-title-con {
+    height: fit-content;
+}
+
+.sched-con {
+    display: flex;
+    align-items: center;
+}
+
 @media only screen and (max-width: 767px) {
+
+    .location-section {
+        font-family: 'Exo 2', sans-serif;
+        height: fit-content;
+    }
+
+    .map-con {
+        margin-bottom: 20px;
+    }
+
+    .sched-con {
+        display: flex;
+        align-items: start;
+    }
+
     .sched-text {
         text-align: center;
         margin-left: 10px;
@@ -17,4 +41,10 @@
     .clinichrs {
         margin-top: 20px;
     }
+
+    .map-con {
+        height: fit-content;
+    }
+
+
 }
