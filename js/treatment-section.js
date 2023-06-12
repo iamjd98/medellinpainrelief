@@ -1,5 +1,5 @@
 let listVideo = document.querySelectorAll('.video-list .vid');
-let mainVideo = document.querySelector('.main-video video');
+let mainVideo = document.querySelector('#myVideo');
 let title = document.querySelector('.main-video .title');
 
 listVideo.forEach(video => {
@@ -9,16 +9,17 @@ listVideo.forEach(video => {
     
     if (video.classList.contains('active')) {
       let src = video.children[0].getAttribute('src');
+      let poster = video.children[0].getAttribute('poster');
+      
       mainVideo.src = src;
+      mainVideo.setAttribute('poster', poster);
       
       let text = video.children[1].innerHTML;
       title.innerHTML = text;
-      
-      // Reset the poster attribute of the main video
-      mainVideo.removeAttribute('poster');
     }
   };
 });
+
 
 
 var video = document.getElementById("myVideo");
