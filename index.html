@@ -626,29 +626,42 @@
   <div class="contact-form-wrapper container-fluid c0l-12 m-0 p-0">
 
     <center>
-    <div class="contact-form-con m-0 p-0 p-3 shadow">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <center><h5 class="mt-2 mb-2">We would love to hear from you!</h5></center>
-
-        <input type="hidden" name="access_key" value="928fd695-dcbe-4c9c-91e4-5930acee473f">
-
-        <div class="form-floating mb-3">
-          <input name="Email" type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-          <label for="emailInput">Enter Email</label>
-        </div>
+      <div class="contact-form-con m-0 p-0 p-3 shadow">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <center><h5 class="mt-2 mb-2">We would love to hear from you!</h5></center>
       
-        <div class="form-floating mb-3">
-          <input name="Name" type="text" class="form-control" id="fullNameInput" placeholder="Enter Full Name">
-          <label for="fullNameInput">Enter Full Name</label>
-        </div>
+          <input type="hidden" name="access_key" value="928fd695-dcbe-4c9c-91e4-5930acee473f">
       
-        <div class="form-floating">
-          <textarea name="Message" class="form-control" placeholder="Enter your message here" id="messageInput" style="height: 100px"></textarea>
-          <label for="messageInput">Enter Your Message Here</label>
-        </div>
-        <button type="submit" class="btn btn-md btn-success mt-2" onclick="validateForm(event)" id="submitButton">Submit Message</button>
-      </form>
-    </div>
+          <div class="form-floating mb-3">
+            <input name="Email" type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+            <label for="emailInput">Enter Email</label>
+          </div>
+      
+          <div class="form-floating mb-3">
+            <input name="Phone" type="tel" pattern="[0-9]{11}" class="form-control" id="phoneInput" placeholder="09XXXXXXXXX" required>
+            <label for="phoneInput">Enter Phone Number</label>
+          </div>
+      
+          <div class="form-floating mb-3">
+            <input name="Name" type="text" class="form-control" id="fullNameInput" placeholder="Enter Full Name" required>
+            <label for="fullNameInput">Enter Full Name</label>
+          </div>
+      
+          <div class="form-floating">
+            <textarea name="Message" class="form-control" placeholder="Enter your message here" id="messageInput" style="height: 100px" required></textarea>
+            <label for="messageInput">Enter Your Message Here</label>
+          </div>
+      
+          <div class="form-check mt-3 mb-3">
+            <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+            <label class="form-check-label" for="privacyCheck">
+              I agree to the<a href="#" data-bs-toggle="modal" data-bs-target="#PP-modal"> Privacy Policy</a>.
+            </label>
+          </div>
+      
+          <button type="submit" class="btn btn-md btn-success mt-2" onclick="validateForm(event)" id="submitButton">Submit Message</button>
+        </form>
+      </div>
   </center>
 
   </div>
@@ -661,7 +674,7 @@
 
     <div class="phone col-sm-6">
         <p class="email-text m-0 p-0 d-flex align-items-center justify-content-center"> 
-        <span class="me-2"><a href="">Privacy Policy</a></span>
+        <span class="me-2"><a data-bs-toggle="modal" data-bs-target="#PP-modal" href="#">Privacy Policy</a></span>
         <a href="https://m.me/medellinpainrelief/" target="_blank"><span class="me-1"><i class="bi bi-messenger"></i></span></a>
         <a href="https://facebook.com/medellinpainrelief/" target="_blank"><span><i class="bi bi-facebook"></i></span></a> 
         </p>
@@ -677,7 +690,7 @@
 <a href="#" class="back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></a>
 
 
-<!-- Modal -->
+<!--About Us Modal -->
 <div class="modal fade" id="AboutUs-Modal" tabindex="-1" aria-labelledby="AboutUs-Modal" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
@@ -727,6 +740,105 @@
 
         To make an appointment to consult with the doctor please contact Jen at <span class="fw-bold">0917 169 7677</span>0917 169 7677 or 
         click this website’s phone dial button on the first panel to reach Jen immediately. <br> <br>
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Privacy Policy Modal -->
+<div class="modal fade" id="PP-modal" tabindex="-1" aria-labelledby="PP-Modal" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Privacy Policy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="pp-content">
+          <span class="fw-bold fs-3">Privacy Policy for Medellin Pain Relief Chiropractic Clinic</span>
+
+         <br>
+         <br>
+
+
+          At Medellin Pain Relief Chiropractic Clinic ,
+          we are committed to protecting the privacy and security of the personal 
+          information of our website visitors and users, especially those under the age of 18. 
+          This Privacy Policy outlines how we collect, use, disclose, and protect the information 
+          you provide to us through our website. By using our website and submitting your personal information, 
+          you agree to the practices described in this Privacy Policy.
+
+          <br>
+          <br>
+          
+          <span class="fw-bold">1. Information We Collect:</span>
+          <br>
+          <br>
+          a. Personal Information: When you use our website, we may collect personal information, including but not limited to your full name, email address, phone number, and any additional information you voluntarily provide in the message field of our contact form.
+          <br>
+          <br>
+          b. Automatically Collected Information: We may automatically collect certain information about your visit to our website, such as your IP address, browser type, referring/exit pages, operating system, date/time stamp, and clickstream data. This information is used to analyze trends, administer the website, track users' movements around the site, and gather demographic information.
+          <br>
+          <br>
+          <span class="fw-bold">2. Use of Collected Information:</span>
+          <br>
+          <br>
+          a. We may use the personal information you provide to respond to your inquiries, provide the requested services, and improve our services.
+          <br>
+          <br>
+          b. We may use automatically collected information to analyze and enhance the functionality of our website, customize the user experience, and gather demographic information.
+          <br>
+          <br>
+          c. We may send promotional materials, discounts, or marketing communications to the email address and phone number you provided.
+          <br>
+          <br>
+          <span class="fw-bold">3. Disclosure of Collected Information:</span>
+          <br>
+          <br>
+          a. We may disclose your personal information to our employees, contractors, and service providers who require access to such information to assist in operating our website and providing our services. These parties are bound by confidentiality obligations and may not use your personal information for any other purpose.
+          <br>
+          <br>
+          b. We may disclose your personal information if required by law or to protect our rights, property, or safety, or the rights, property, or safety of others.
+          <br>
+          <br>
+          c. We may disclose aggregated, non-personally identifiable information about our website users without restriction.
+          <br><br>
+          <span class="fw-bold">4. Third-Party Links:</span>
+          <br><br>
+          Our website may contain links to third-party websites. We have no control over the privacy practices or the content of those websites. We encourage you to review the privacy policies of any third-party sites you visit.
+          <br><br>
+          <span class="fw-bold">5. Data Security:</span>
+          <br><br>
+          We take reasonable measures to protect the security of your personal information and prevent unauthorized access, disclosure, or alteration. However, please be aware that no transmission of data over the internet or any wireless network can be guaranteed to be 100% secure.
+          <br><br>
+          <span class="fw-bold">6. Parental Consent:</span>
+          <br><br>
+          If you are under the age of 18, you must obtain the consent of your parent or legal guardian before providing any personal information on our website.
+          <br><br>
+          <span class="fw-bold">7. Parental Rights:</span>
+          <br><br>
+          If you are a parent or legal guardian and you believe your child has provided personal information on our website without your consent, please contact us using the information provided below, and we will promptly delete the information.
+          <br><br>
+          <span class="fw-bold">8. Changes to the Privacy Policy:</span>
+          <br><br>
+          We may update this Privacy Policy from time to time. Any changes will be effective upon posting of the revised Privacy Policy on our website. We encourage you and your parent or legal guardian to review this Privacy Policy periodically for any updates.
+          <br><br>
+          <span class="fw-bold">9. Contact Us</span>:
+          <br><br>
+          If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:
+          <br>
+          <br>
+          <span class="fw-bold">Medellin Pain Relief Chiropractic Clinic<br>
+          Address: Gumamela Street, Daanlungsod, Medellin, Cebu, 6012<br>
+          Email: medellinpainrelief@gmail.com<br>
+          Phone: (0917) 169-7677</span>
+          <br>
+          <br>
+          By using our website and submitting your personal information, you acknowledge that you have obtained the necessary consent from your parent or legal guardian, have read and understood this Privacy Policy, and consent to the collection, use, and disclosure of your information in accordance with this policy.
       </p>
       </div>
       <div class="modal-footer">

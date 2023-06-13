@@ -1,37 +1,27 @@
-function validateForm(event) {
-    event.preventDefault(); 
+document.addEventListener('DOMContentLoaded', function() {
+  const emailInput = document.getElementById('emailInput');
+  const phoneInput = document.getElementById('phoneInput');
+  const fullNameInput = document.getElementById('fullNameInput');
+  const privacyCheck = document.getElementById('privacyCheck');
+  const submitButton = document.getElementById('submitButton');
 
-
-    var email = document.getElementById('emailInput').value;
-    var fullName = document.getElementById('fullNameInput').value;
-    var message = document.getElementById('messageInput').value;
-
-
-    if (email.trim() === '') {
-      alert('Please enter a valid email.');
-      return;
-    } else if (fullName.trim() === '') {
-      alert('Please enter your full name.');
-      return;
-    } else if (message.trim() === '') {
-      alert('Please enter your message.');
-      return;
+  function validateForm() {
+    if (
+      emailInput.value.trim() === '' ||
+      phoneInput.value.trim() === '' ||
+      fullNameInput.value.trim() === '' ||
+      !privacyCheck.checked
+    ) {
+      submitButton.disabled = true;
+    } else {
+      submitButton.disabled = false;
     }
-
-
-    document.forms[0].submit();
   }
 
+  emailInput.addEventListener('input', validateForm);
+  phoneInput.addEventListener('input', validateForm);
+  fullNameInput.addEventListener('input', validateForm);
+  privacyCheck.addEventListener('change', validateForm);
 
-  var submitButton = document.getElementById('submitButton');
-  submitButton.disabled = true;
-
- 
-  document.addEventListener('input', function() {
-    var email = document.getElementById('emailInput').value;
-    var fullName = document.getElementById('fullNameInput').value;
-    var message = document.getElementById('messageInput').value;
-
-    submitButton.disabled = email.trim() === '' || fullName.trim() === '' || message.trim() === '';
-  });
-
+  validateForm();
+});
