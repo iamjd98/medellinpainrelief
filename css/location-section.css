@@ -16,6 +16,18 @@
     align-items: center;
 }
 
+.sched-con .clinichrs {
+    width: fit-content;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #6C0C0F;
+    border-radius: 5px;
+}
+
 @media only screen and (max-width: 767px) {
 
     .location-section {
