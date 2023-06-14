@@ -32,6 +32,11 @@ overflow-y: hidden;
     width: fit-content;
 }
 
+.nav-link {
+    color: #6C0C0F !important;
+    font-weight: 800 !important;
+}
+
 .tagline-con {
     height: 100%;
     background: linear-gradient(rgba(255, 255, 255, 0.726), rgba(255, 255, 255, 0.753)), url(../photos/banner_bg.jpeg);
@@ -197,6 +202,7 @@ overflow-y: hidden;
 
 
 @media only screen and (max-width: 992px) {
+
 
     .tagline-text-con {
         display: flex;
