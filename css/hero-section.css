@@ -50,6 +50,10 @@ overflow-y: hidden;
 
 @media only screen and (min-width: 1440px) {
 
+    #tagline {
+        width: 500px;
+    }
+
     .tagline-text-con {
         display: flex;
         justify-content: center;
@@ -114,6 +118,10 @@ overflow-y: hidden;
 
 
 @media only screen and (max-width: 1440px) {
+
+    #tagline {
+        width: 550px;
+    }
 
     .tagline-text-con {
         display: flex;
@@ -184,6 +192,10 @@ overflow-y: hidden;
 
 @media only screen and (max-width: 1200px) {
 
+    #tagline {
+        width: 450px;
+    }
+
     .tagline-text-con {
         display: flex;
         justify-content: center;
@@ -203,6 +215,9 @@ overflow-y: hidden;
 
 @media only screen and (max-width: 992px) {
 
+    #tagline {
+        width: 400px;
+    }
 
     .tagline-text-con {
         display: flex;
@@ -222,6 +237,10 @@ overflow-y: hidden;
 
 
 @media only screen and (max-width: 833px) {
+
+    #tagline {
+        width: 300px;
+    }
 
     .tagline-text-con {
         display: flex;
