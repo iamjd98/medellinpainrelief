@@ -1,6 +1,6 @@
 .location-section {
     font-family: 'Exo 2', sans-serif;
-    height: fit-content;
+    height: 100vh;
 
 }
 
@@ -35,13 +35,15 @@
 
 .map {
     width:400px;
-    height: 350px;
+    height: 200px;
 }
 
 .front-office {
     width:400px;
-    height: 350px;
+    height: 320px;
 }
+
+
 
 @media only screen and (max-width: 950px) {
     .map {
