@@ -46,7 +46,8 @@ overflow-y: hidden;
 }
 
 #tagline {
-    transform: rotate(-4deg);
+    transform: rotate(-8deg);
+    margin-bottom: 90px;
 }
 
 
@@ -123,6 +124,7 @@ overflow-y: hidden;
 
     #tagline {
         width: 550px;
+        margin-bottom: 90px;
     }
 
     .tagline-text-con {
@@ -196,6 +198,7 @@ overflow-y: hidden;
 
     #tagline {
         width: 450px;
+        margin-bottom: 40px;
     }
 
     .tagline-text-con {
@@ -219,6 +222,7 @@ overflow-y: hidden;
 
     #tagline {
         width: 400px;
+        margin-bottom: 30px;
     }
 
     .tagline-text-con {
