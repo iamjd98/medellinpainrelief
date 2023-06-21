@@ -55,3 +55,34 @@
   color: #fff;
 }
 
+
+
+#scroll-arrow {
+  position: fixed;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+#scroll-arrow.hidden {
+  opacity: 0;
+}
+
+#scroll-arrow i {
+  font-size: 2rem;
+  color: #555;
+}
+
+#scroll-arrow p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+
+

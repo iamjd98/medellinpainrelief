@@ -138,3 +138,16 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  var scrollArrow = document.getElementById("scroll-arrow");
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > 20) {
+      scrollArrow.classList.add("hidden");
+    } else {
+      scrollArrow.classList.remove("hidden");
+    }
+  });
+});
+
